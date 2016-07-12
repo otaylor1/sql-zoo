@@ -64,13 +64,19 @@ SELECT name
 
 
 --SELECT from WORLD - challenge 1
---SELECT from WORLD - challenge 1
---SELECT from WORLD - challenge 1
---SELECT from WORLD - challenge 1
---SELECT from WORLD - challenge 1
---SELECT from WORLD - challenge 1
---SELECT from WORLD - challenge 1
---SELECT from WORLD - challenge 1
+--SELECT from WORLD - challenge 2
+--SELECT from WORLD - challenge 3
+--SELECT from WORLD - challenge 4
+--SELECT from WORLD - challenge 5
+--SELECT from WORLD - challenge 6
+--SELECT from WORLD - challenge 7
+--SELECT from WORLD - challenge 8
+--SELECT from WORLD - challenge 9
+--SELECT from WORLD - challenge 10
+--SELECT from WORLD - challenge 11
+--SELECT from WORLD - challenge 12
+--SELECT from WORLD - challenge 13
+
 
 
 
