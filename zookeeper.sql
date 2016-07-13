@@ -58,9 +58,20 @@ SELECT name
  WHERE name LIKE capital
  
 --SELECT name - challenge 12
+SELECT name  FROM world
+ WHERE capital = concat(name,' city')
+
 --SELECT name - challenge 13
+SELECT capital, name  FROM world
+ WHERE capital LIKE concat('%', name, '%')
+ 
 --SELECT name - challenge 14
+SELECT name, capital  FROM world
+ WHERE capital LIKE concat( name, '_%')
+ 
 --SELECT name - challenge 15
+SELECT name, REPLACE(capital, name, '') AS extension  FROM world
+ WHERE capital LIKE concat(name, '_%')
 
 
 --SELECT from WORLD - challenge 1
@@ -87,8 +98,17 @@ WHERE name IN ('France', 'Germany', 'Italy')
 WHERE name LIKE 'United_%'
 
 --SELECT from WORLD - challenge 7
+SELECT name, population, area FROM world
+WHERE population > 250000000 OR area > 3000000
+
 --SELECT from WORLD - challenge 8
+SELECT name, population, area FROM world
+WHERE population > 250000000 XOR area > 3000000
+
 --SELECT from WORLD - challenge 9
+SELECT name, ROUND(population/1000000,2), ROUND(gdp/1000000000,2) FROM world
+WHERE continent='South America'
+
 --SELECT from WORLD - challenge 10
 --SELECT from WORLD - challenge 11
 --SELECT from WORLD - challenge 12
