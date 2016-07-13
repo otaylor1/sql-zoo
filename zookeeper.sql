@@ -117,4 +117,57 @@ WHERE continent='South America'
 
 
 
+--SELECT from Nobel - challenge 1
+SELECT yr, subject, winner
+  FROM nobel
+ WHERE yr = 1950
+ 
+--SELECT from Nobel - challenge 2
+SELECT winner
+  FROM nobel
+ WHERE yr = 1962
+   AND subject = 'Literature'
+   
+--SELECT from Nobel - challenge 3
+SELECT yr, subject FROM nobel
+WHERE winner='Albert Einstein'
+
+--SELECT from Nobel - challenge 4
+SELECT winner
+  FROM nobel
+ WHERE yr >= 2000
+   AND subject = 'peace'
+   
+--SELECT from Nobel - challenge 5
+SELECT yr, subject, winner
+  FROM nobel
+ WHERE yr BETWEEN 1980 AND 1989
+   AND subject = 'literature'
+   
+--SELECT from Nobel - challenge 6
+SELECT * FROM nobel
+ WHERE winner IN('Theodore Roosevelt', 'Woodrow Wilson', 'Jimmy Carter')
+ 
+--SELECT from Nobel - challenge 7
+SELECT winner FROM nobel
+WHERE winner LIKE 'john_%'
+
+--SELECT from Nobel - challenge 8
+SELECT yr, subject, winner FROM nobel
+WHERE yr=1980 AND subject='physics' OR yr=1984 AND subject= 'chemistry'
+
+--SELECT from Nobel - challenge 9
+SELECT yr, subject, winner FROM nobel
+WHERE yr=1980 AND subject IN('literature','Economics','Peace','Physics')
+
+--SELECT from Nobel - challenge 10
+SELECT yr, subject, winner FROM nobel
+WHERE yr <1910 AND subject='medicine' OR yr >2003 AND subject= 'literature'
+
+--SELECT from Nobel - challenge 11
+--SELECT from Nobel - challenge 12
+--SELECT from Nobel - challenge 13
+--SELECT from Nobel - challenge 14
+
+
 
