@@ -64,11 +64,28 @@ SELECT name
 
 
 --SELECT from WORLD - challenge 1
+SELECT name, continent, population FROM world
+
 --SELECT from WORLD - challenge 2
+SELECT name FROM world
+WHERE population>200000000
+
 --SELECT from WORLD - challenge 3
+SELECT name, gdp/population FROM world
+WHERE population>200000000
+
 --SELECT from WORLD - challenge 4
+SELECT name, population/1000000 FROM world
+WHERE continent='South America'
+
 --SELECT from WORLD - challenge 5
+ SELECT name, population FROM world
+WHERE name IN ('France', 'Germany', 'Italy')
+
 --SELECT from WORLD - challenge 6
+ SELECT name FROM world
+WHERE name LIKE 'United_%'
+
 --SELECT from WORLD - challenge 7
 --SELECT from WORLD - challenge 8
 --SELECT from WORLD - challenge 9
